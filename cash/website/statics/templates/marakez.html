@@ -1,0 +1,105 @@
+{% extends "basic.html" %}
+{% load static %}
+
+{% block 'head' %}
+
+<link href = "{% static '/css/index.css' %}" rel = 'stylesheet'>
+<link href = "{% static '/css/marakez.css' %}" rel = 'stylesheet'>
+
+<script src = "{% static '/js/marakez.js' %}"></script>
+{% endblock 'head' %}
+
+
+
+{% block 'content' %}
+    
+   
+    <div class = 'wrapper'>
+        <img src = "{% static 'imgs/logo4.png' %}" width = 100% height = 100% style ='z-index:99999;pointer-events : none;position : fixed;object-fit:none; opacity : 0.5;'  />
+        <div class = 'navbar'>
+
+
+            <div class = 'section'>
+
+
+
+
+                  
+
+                    <div class = 'item' id = 'back-to-casher' >
+                        <i class="fa-solid fa-hand-point-left"></i>
+                        <span>الرجوع للكاشير</span>
+                    </div>
+
+                    <div class = 'item'  id = 'query'>
+                        <i class="fa-solid fa-question"></i>
+                        <span> استعلام</span>
+                    </div>
+
+                    <div class = 'item'  id = 'total-money'>
+                        <i class="fa-solid fa-money-bills"></i>
+                        <span> درج الكاشير</span>
+                    </div>
+
+            </div>
+
+            <div class = 'section'>
+                    <div class = 'item' type = 'logout' id = 'logout'>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span> تســجيل خــروج</span>
+                    </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class=  'skeleton'>
+            <div class = 'receit border-light'>
+                <div class = 'item-ctrl'>
+                    <span class ='inactive item delete border-light' ><i class="fa-solid fa-xmark"></i>  حــذف</span>
+                     <span class ='item amount border-light'>الكمـيه</span>
+                </div>
+
+                <div class = 'items '>
+                    <span class = 'title'>فاتورة حجز</span>
+
+                    <div class = 'sales-items'>
+                     
+                    </div>
+                </div>
+
+                <div class= 'total'>
+                    <span class = 'title'>الإجــمـالي</span>
+                    <span class = 'value'>0</span>
+                </div>
+
+
+                <div class = 'btns'>
+                    <button class = 'delete border-light'>حــذف الفاتوره<i class="fa-solid fa-xmark"></i></button>
+
+                    <button class = 'save border-light'>حــجز الفاتوره<i class="fa-solid fa-dollar-sign"></i></button>
+
+                </div>
+            </div>
+
+
+{% comment %}  {% endcomment %}
+            
+
+
+
+
+
+
+            <div class = 'classes border-light'>
+                
+
+                <div class = 'items-rect border-light'>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock 'content' %}

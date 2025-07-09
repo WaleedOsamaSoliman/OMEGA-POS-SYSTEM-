@@ -1,0 +1,136 @@
+{% extends "basic.html" %}
+{% load static %}
+
+{% block 'head' %}
+
+<link href = "{% static '/css/index.css' %}" rel = 'stylesheet'>
+<script src = "{% static '/js/index.js' %}"></script>
+{% endblock 'head' %}
+
+
+
+{% block 'content' %}
+
+   
+    <div class = 'wrapper'>
+        <img src = "{% static 'imgs/logoExtra.png' %}" style ='bottom : 0;width : 850px;height : 280px;z-index:99999;pointer-events : none;position : fixed;object-fit:none; opacity : 0.5;mix-blend-mode:soft-light;'  />
+
+        <div class = 'navbar'>
+
+
+            <div class = 'section'>
+
+                   
+                    <div class = 'item' type = 'newReceit'>
+                        <i class="fa-solid fa-plus"></i>
+                        <span>فــاتوره جديده</span>
+                    </div>
+
+
+                    <div class = 'item' id = 'restore_receit' type = 'moneyBack'>
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <span>إرسترجــاع فاتورة</span>
+                    </div>
+
+
+                    <div class = 'item' type = 'finish'>
+                        <i class="fa-solid fa-money-bills"></i>
+                        <span>تســليم الدرج</span>
+                    </div>
+
+                    <div class = 'item' type = 'refinish' style = "display:none">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span>إعــاده تــسليم</span>
+                    </div>
+
+                    <div class = 'item' type = 'booking' id = 'booking'>
+                        <i class="fa-solid fa-users-line"></i>
+                        <span>حجز المراكز</span>
+                    </div>
+
+                      <div class = 'item' type = 'end.day' id = 'end.day'>
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span> تسليم اليوم</span>
+                    </div>
+
+
+
+
+
+
+            </div>
+
+            <div class = 'section'>
+                    
+
+                    <div class = 'item' type = 'logout' id = 'logout'>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span> تســجيل خــروج</span>
+                    </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class=  'skeleton'>
+            <div class = 'receit border-light'>
+                <div class = 'item-ctrl'>
+                    <span class ='inactive item delete border-light' ><i class="fa-solid fa-xmark"></i>  حــذف</span>
+                    <span class ='item amount border-light'>الكمـيه</span>
+                    <span class  = 'bonus' title = 'مسحوبات أمناء الشرطه '></span>
+
+                </div>
+
+                <div class = 'items '>
+                    <span class = 'title'>فــاتوره بيع</span>
+
+                    <div class = 'sales-items'>
+                     
+                    </div>
+                </div>
+
+                <div class= 'total'>
+                    <span class = 'title'>الإجــمـالي</span>
+                    <span class = 'value'>0</span>
+                </div>
+
+
+                <div class = 'btns'>
+                    <button class = 'delete border-light'>حــذف الفاتوره<i class="fa-solid fa-xmark"></i></button>
+
+                    <button class = 'save border-light'>حـفـظ الفاتوره<i class="fa-solid fa-dollar-sign"></i></button>
+
+                </div>
+            </div>
+
+
+{% comment %}  {% endcomment %}
+            
+
+
+
+
+
+
+            <div class = 'classes border-light'>
+                <div class = 'sub-classes'>
+                    <span class = 'title'> الأقســـام</span>
+                    <div class=  'items'>
+                        <span  id = 'all' class = 'item border-light'>الــكل</span>
+                        <span id = 'manfaz' class = 'item border-light' >المنــفذ</span>
+                        <span id = 'foram' class = 'item border-light'>الــفورم</span>
+                        <span id = 'offers' class = 'item border-light'>عــروض</span>
+
+
+                    </div>
+                </div>
+
+                <div class = 'items-rect border-light'>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock 'content' %}

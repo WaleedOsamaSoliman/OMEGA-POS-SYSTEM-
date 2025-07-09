@@ -1,0 +1,15 @@
+
+{
+  "name": "tipper",
+  "version": "1.0.0",
+  "description": "convert Cash django system to Desktop app with electron JS",
+  "main": "index.js",
+  "scripts": {
+    "cash" : "electron ."
+  },
+  "author": "waleed osama",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^29.1.6"
+  }
+}

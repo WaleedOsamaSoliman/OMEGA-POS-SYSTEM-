@@ -1,0 +1,125 @@
+{% extends "basic.html" %}
+{% load static %}
+
+
+{% block 'head' %}
+<link href = "{% static '/css/panel.css' %}" rel = 'stylesheet'>
+<script src = "{% static '/js/panel.js' %}"></script>
+{% endblock 'head' %}
+
+
+
+{% block 'content' %}
+   <div class = 'wrapper'>
+    <div class = 'navbar'>
+        <div class = 'logo'>
+            <img  src = "{% static '/imgs/logo.png' %}" width = 50 height = 50/>
+            <span class = 'title'>أومــيجـا</span>
+        </div>
+
+        <div class ='settings'>
+            <div class = 'item' type = 'main-settings' title = 'الإعــدادات العــامه'>
+            
+                <div id = 'add-user'>
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span> إضــافة مستخدم</span>
+                </div>
+
+                <div id = 'remove-user'>
+                    <i class="fa-solid fa-user-minus"></i>
+                    <span> حذف مستخدم</span>
+                </div>
+
+                <div id = 'minus-user'>
+                    <i class="fa-solid fa-filter-circle-dollar"></i>
+                    <span>تعجيزات مستخدم</span>
+                </div>
+
+                <div id = 'over-user'>
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <span> استــلام الأوفر</span>
+                </div>
+
+                <div id = 'existed-money'>
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <span>نقدية الدرج</span>
+                </div>
+
+
+            </div>
+
+
+            <div class = 'item' type = 'reports' title = 'التقــارير'>
+                <div id = 'report-products'>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>تقرير بالأصنــاف</span>
+                </div>
+
+                <div id = 'report-sales'>
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <span>تقارير المبيعـــات</span>
+                </div>
+
+
+                <div id = 'report-given'>
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>تقارير التسليمــات</span>
+                </div>
+
+                <div id = 'report-finish'>
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span> تقارير تقفيل الخزنه </span>
+                </div>
+
+
+                <div id = 'report-deleted'>
+                    <i class="fa-solid fa-trash-can-arrow-up"></i>
+                    <span>تقارير فواتير المرتجعــات</span>
+                </div>
+                
+            </div>
+
+
+            <div class = 'item' type = 'categories' title = 'الترابيزه'>
+
+                <div disabled id = 'adjust'>
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span> جرد الترابيزه </span>
+                </div>
+
+            </div>
+
+            <div  style = "display:none;" class = 'item' type = 'config' title = 'إعدادات الضبط'>
+
+                <div disabled id = 'reset'>
+                    <i class ="fa-solid fa-money-bill-trend-up"></i>
+                    <span> إعاده ضبط  </span>
+                </div>
+
+            </div>
+
+           
+
+
+            <div class = 'item logout' id = 'logout' title = 'تسجيل الخروج'>
+                
+               <div class = 'content'>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>تــسجيل الخـروج</span>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class = 'control-panel'>
+        {% comment %} <span class = 'title' id = 'title'>
+            <i class = 'fa-solid fa-money-bill-trend-up'></i>
+            <span>تعجيزات المستخدمين</span>
+        </span>
+
+        <div class = 'content'></div> {% endcomment %}
+        <span class = 'cp'>جميع الحقوق محفوظه &copy; للدكتور وليد أسامه  ولا يجوز بيع او استخدام هذا البرنامج الا بإذنه حتي لا تعرض نفسك للمسأله القانونيه</span>
+    </div>
+   </div>
+{% endblock 'content' %}
