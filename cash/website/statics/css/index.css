@@ -1,0 +1,786 @@
+
+
+body { 
+    background: #2f2d2d;
+   /* background : repeating-linear-gradient(209deg, #FFC107, #000000 100px) */
+}
+div.wrapper { 
+    position: fixed;
+    top  : 0 ;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding : 3px;
+
+    display: flex;
+    gap : 3px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+div.wrapper > div.navbar { 
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap : 5px; */
+    direction: ltr;
+    overflow: auto;
+    padding : 5px;
+    min-height: 70px;;
+}
+
+div.wrapper > div.navbar > div.section { 
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap : 5px;
+    height: 100%;;
+    
+}
+div.wrapper > div.navbar > div.section > div.item { 
+    position: relative;
+    min-width: 100px;
+    height: 100%;
+    border : 1px solid rgba(160, 158, 158, 0.382);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap : 1px;
+    align-items: center;
+    min-width: 100px;
+    color : #fff;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    padding : 10px;
+    ;
+}
+div.wrapper > div.navbar > div.section>div.item > i { 
+    
+    font-size: 27px;
+    color : #fff;
+}
+div.wrapper > div.navbar > div.section> div.item > span {
+    font-size : 12px;
+    font-weight: bold;
+}
+div.wrapper > div.navbar > div.section > div.item:hover { 
+    background-color:var(--ess-color) ;
+    color :#fff;
+}
+
+
+div.wrapper > div.skeleton { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap : 8px;
+    flex-direction: row;
+    direction: ltr;
+    padding : 8px;
+    max-height: 90%;
+
+}
+
+
+div.wrapper > div.skeleton >  div.classes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap :5px;
+    padding-bottom : 5px;
+    direction: rtl;
+    ;
+}
+div.wrapper > div.skeleton >  div.classes >  div.sub-classes { 
+    position: relative;
+    width: 100%;
+    height: 70px;
+    min-height: 70px;
+    border-bottom : 1px solid rgba(160, 158, 158, 0.382);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap : 10px;
+    color : #fff;
+    padding : 5px;
+}
+div.wrapper > div.skeleton >  div.classes >  div.sub-classes  > span.title { 
+    position: relative;
+    padding: 5px;
+    padding-left: 10px;
+    border-left: 2px solid #fff;
+    width: 150px;
+    text-align: center;
+}
+
+div.wrapper > div.skeleton >  div.classes >  div.sub-classes  > div.items { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+    overflow: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap :10px;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+div.wrapper > div.skeleton >  div.classes >  div.sub-classes  > div.items > span.item { 
+    position: relative;
+    min-width: 100px;;
+    padding : 5px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+div.wrapper > div.skeleton >  div.classes >  div.sub-classes  > div.items > span.item.active { 
+    background-color: var(--ess-color);
+
+}
+div.wrapper > div.skeleton >  div.classes >  div.sub-classes  > div.items > span.item.active:hover { 
+    background-color: var(--ess-color);
+}
+div.wrapper > div.skeleton >  div.classes >  div.sub-classes  > div.items > span.item:hover { 
+    /* background-color: var(--ess-color); */
+    cursor: pointer;
+    background-color: var(--silver-color);
+}
+
+div.wrapper > div.skeleton >  div.classes >  div.items-rect { 
+    position: relative;
+    width: calc(100% - 10px);
+    height: 100%;
+    padding  : 15px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap : 25px;
+    overflow: auto;
+
+}
+div.wrapper > div.skeleton >  div.classes >  div.items-rect > div.item { 
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap :10px;
+    color : #fff;
+    background-color: var(--silver-color);
+    
+}
+div.wrapper > div.skeleton >  div.classes >  div.items-rect > div.item:hover { 
+    cursor: pointer;
+    background-color: var(--ess-color);
+    
+    
+}
+
+div.wrapper > div.skeleton >  div.classes >  div.items-rect > div.item > span.price::after  { 
+    position: relative;
+    content :"جنيــها";
+    padding-right : 5px;
+}
+
+
+div.wrapper > div.skeleton > div.receit { 
+    position: relative;
+    width: 300px;
+    height: 100%;
+    border-radius: 3px;
+    min-width: 300px;;
+    /* padding : 5px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap : 0;
+}
+div.wrapper > div.skeleton > div.receit  > div.item-ctrl  {
+    position: relative;
+    width: 100%;
+    /* height: 70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap : 5px;
+    padding : 5px;
+}
+
+div.wrapper > div.skeleton > div.receit  > div.item-ctrl > span.bonus  { 
+    width : 20px;
+    height :20px;
+    border:2px solid whitesmoke;
+    border-radius: 5px;
+    min-width: 20px;
+    min-height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin : 5px;
+
+}
+div.wrapper > div.skeleton > div.receit  > div.item-ctrl > span.bonus.active::before { 
+    position: absolute;
+    width : 80%;
+    height: 80%;
+    background-color: limegreen;
+    content:""
+}
+div.wrapper > div.skeleton > div.receit  > div.item-ctrl > span.item   { 
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    font-size: 14px;;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 5px;
+    margin: auto;
+    color : #fff;
+    padding : 7px;
+    border-radius: 2px;
+    background-color: var(--silver-color);
+    cursor: pointer;
+}
+div.wrapper > div.skeleton > div.receit  > div.item-ctrl > span.item.delete.inactive { 
+    pointer-events: none;
+    filter:brightness(0.7)
+}
+div.wrapper > div.skeleton > div.receit  > div.item-ctrl > span.item.delete:hover { 
+    background-color: var(--red-color);
+}
+div.wrapper > div.skeleton > div.receit  > div.item-ctrl > span.item.amount:hover {
+    filter:brightness(0.8)
+}
+div.wrapper > div.skeleton > div.receit  > div.items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap : 10px;
+    align-items: center;
+    padding : 5px 0px;
+    color : #fff;
+    border-top : 1px solid rgba(160, 158, 158, 0.382);
+    overflow: auto;
+}
+div.wrapper > div.skeleton > div.receit> div.items > div.sales-items { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap : 0px;
+    /* background-color: red; */
+}
+div.wrapper > div.skeleton > div.receit> div.items > div.sales-items > div.item.active { 
+    background-color: rgb(1, 127, 174);
+}
+div.wrapper > div.skeleton > div.receit> div.items > div.sales-items > div.item.active:hover { 
+    filter:brightness(1)
+}
+div.wrapper > div.skeleton > div.receit > div.items > div.sales-items > div.item { 
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: var(--silver-color);
+    padding: 5px 15px ;
+    direction: rtl;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap : 15px;
+    border-bottom: 2px dashed var(--silver-color);
+
+    
+}
+
+div.wrapper > div.skeleton > div.receit > div.items > div.sales-items > div.item:hover { 
+    cursor: pointer;
+    /* background-color: rgb(1, 127, 174); */
+    filter:brightness(0.9)
+}
+div.wrapper > div.skeleton > div.receit > div.items > div.sales-items > div.item > span.amount  {
+    color :var(--ess-color);
+    font-weight: 900;
+    font-size: 20px;
+}
+div.wrapper > div.skeleton > div.receit > div.items > div.sales-items > div.item  > div.details { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap : 0px;
+    font-size: 14px;;
+}
+div.wrapper > div.skeleton > div.receit > div.items > div.sales-items > div.item  > div.details > span.name { 
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+div.wrapper > div.skeleton > div.receit > div.items > div.sales-items > div.item  > div.details > span.price { 
+    font-size: 12px;
+    color  : limegreen;
+    font-weight: 900;
+}
+
+div.wrapper > div.skeleton > div.receit > div.items > div.sales-items > div.item  > div.details > span.price:after { 
+    position: relative;
+    content:"جنيــها";
+    color :#fff;
+    font-weight: 100;
+    
+}
+
+div.wrapper > div.skeleton > div.receit > div.total { 
+    position: relative;
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-top :2px dashed rgba(160, 158, 158, 0.382);
+    padding : 15px;
+    direction: rtl;
+    color : #fff;
+
+}
+div.wrapper > div.skeleton > div.receit > div.total > span.value { 
+    color :limegreen;
+    font-weight: 900;
+    font-size : 25px;
+    filter:brightness(1.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+}
+div.wrapper > div.skeleton > div.receit > div.total > span.value::after { 
+    position: relative;
+    content : "جنــيهـا";
+    color : #fff;
+    font-weight: 100;
+    font-size: 15px;
+}
+div.wrapper > div.skeleton > div.receit > div.btns { 
+        width: 100%;
+        height: 70px;
+        border-top : 2px dashed rgba(160, 158, 158, 0.382);
+        padding : 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap : 5px;
+
+}
+div.wrapper > div.skeleton > div.receit > div.btns  > button { 
+    width: 100%;
+    height: 100%;
+    background-color: var(--silver-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap : 10px;
+    outline: none;
+    color :#fff;
+    border-radius: 4px;
+    padding :5px;
+}
+
+div.wrapper > div.skeleton > div.receit > div.btns  > button  > i { 
+    font-size: 20px;;
+}
+div.wrapper > div.skeleton > div.receit > div.btns  > button:hover { 
+    background-color: var(--ess-color);
+    cursor: pointer;
+}
+div.wrapper > div.skeleton > div.receit > div.btns  > button.delete:hover { 
+    background-color: var(--red-color);
+}
+div.wrapper > div.skeleton > div.receit > div.btns  > button.save:hover { 
+    background-color: green
+}
+
+div.alert[type = 'finish.shift'] > div.container , 
+div.alert[type = 'end.day'] > div.container   {
+    position: relative;
+    width: 500px;
+    /* height: 400px; */
+    min-width: 500px;
+    max-height: 450px;
+    background-color: var(--ess-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap : 20px;
+    padding : 20px;
+    
+}
+
+div.alert[type = 'end.day'] > div.container > span.title , 
+div.alert[type = 'finish.shift'] > div.container > span.title {
+    color : #fff;
+    font-weight: 900;
+    font-size : 22px;
+}
+div.alert[type = 'end.day'] > div.container > div.inputs , 
+div.alert[type = 'finish.shift'] > div.container > div.inputs { 
+    position: relative;
+    width: 100%;
+    /* min-height: 50px; */
+    max-height: 400px;
+    
+}
+div.alert[type = 'end.day'] > div.container > div.inputs  > div.item,
+div.alert[type = 'finish.shift'] > div.container > div.inputs  > div.item { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap : 15px;
+    padding : 10px;
+
+}
+div.alert[type = 'end.day'] > div.container > div.inputs  > div.item  > i , 
+div.alert[type = 'finish.shift'] > div.container > div.inputs  > div.item  > i { 
+    color :#fff;
+    min-width: 40px;;
+}
+div.alert[type = 'end.day'] > div.container > div.inputs  > div.item > input  ,
+div.alert[type = 'finish.shift'] > div.container > div.inputs  > div.item > input { 
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height : 40px;
+    text-indent: 10px;
+    font-weight: 900;
+    font-size: 18px;
+
+
+}
+div.alert[type = 'end.day'] > div.container > div.inputs  > div.item > input::placeholder  ,
+div.alert[type = 'finish.shift'] > div.container > div.inputs  > div.item > input::placeholder { 
+    font-weight: 900;
+    font-size: 16px;
+    color :Var(--ess-color);
+}
+div.alert[type = 'end.day'] > div.container >  div.btns,
+div.alert[type = 'finish.shift'] > div.container >  div.btns { 
+    position: relative;
+    width: 100%;
+    height: 70px;
+    padding :10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 15px;
+    font-weight: 900;
+    font-size: 17px;
+}
+div.alert[type = 'end.day'] > div.container > div.btns >button#close,
+div.alert[type = 'finish.shift'] > div.container > div.btns >button#close { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+ 
+    cursor: pointer;
+    color :#fff;
+
+    outline : none;
+    border: none;
+    border-radius: 5px;
+    
+}
+div.alert[type = 'end.day'] > div.container > div.btns >button:hover,
+div.alert[type = 'finish.shift'] > div.container > div.btns >button:hover { 
+    filter:brightness(0.8)
+}
+div.alert[type = 'end.day'] > div.container > div.btns >button#finish,
+div.alert[type = 'finish.shift'] > div.container > div.btns >button#finish { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+ 
+    cursor: pointer;
+    color :#fff;
+
+    outline : none;
+    border: none;
+    border-radius: 5px;
+
+    /* letter-spacing: 2px; */
+}
+
+
+div.wrapper > div.skeleton > div.receit[type = 'restore']  > div.item-ctrl.search-bar { 
+
+    position: relative;
+    direction: rtl;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 5px;
+    flex-direction: row;
+    padding : 5px 15px;
+}
+
+div.wrapper > div.skeleton > div.receit[type = 'restore']  > div.item-ctrl.search-bar > i { 
+    /* color : var(--ess-color); */
+    color :#fff;
+    font-size: 20px;
+    margin-left : 10px;
+
+}
+div.wrapper > div.skeleton > div.receit[type = 'restore']  > div.item-ctrl.search-bar > input#receit_number { 
+    width: 100%;
+    height: 100%;
+    outline : none;
+    border : none ;
+    border-radius: 2px;
+    text-indent: 20px;
+    background-color: var(--silver-color);
+    color : #fff;
+}
+
+div.wrapper > div.skeleton > div.receit[type = 'restore']  > div.item-ctrl.search-bar > input#receit_number::placeholder { 
+    color :#fff;
+    font-size: 14px;
+    /* font-weight: 900; */
+}
+div.wrapper > div.skeleton > div.receit[type = 'restore']  > div.item-ctrl.search-bar > span.search  { 
+    width: 120px;
+    border-radius: 2px;
+}
+div.wrapper > div.skeleton > div.receit[type = 'restore']  > div.item-ctrl.search-bar > span.search:hover { 
+    filter:brightness(0.8)
+}
+
+div.alert > div.wrapper  { 
+   width : 80%;
+   height  : 80%;
+   border-radius : 5px;
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap  : 20px;
+}
+div.alert[type='confirm.end.day'] > button#close
+{
+    all: unset;
+    width: 50px;
+    height: 50px ;
+    background: white;
+    border-radius: 5px;
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    z-index: 99999;
+    right: 0;
+    top: -1px;
+    color:#252525;
+    cursor: pointer;
+}
+div.alert[type='confirm.end.day'] > button#close:hover{
+    background-color: red;
+    color:white;
+}
+div.alert[type='confirm.end.day'] > button#day-back  {
+    all:unset;
+    padding : 5px 10px;
+    min-width: 100px;
+    min-height: 40px;
+    background-color: royalblue;
+    color : white;
+    display: flex;
+    flex-flow: row wrap;
+    gap : 15px;
+    position: absolute;
+    top : 20px;
+    left :20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index:9999;
+}
+div.alert[type='confirm.end.day'] > button#day-back:hover { 
+    background-color: green;
+    color:white;
+}
+div.alert[type = 'confirm.end.day']  table { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-collapse: separate;
+    overflow: auto;
+   
+    background-color: royalblue;
+    color:#252525;
+}
+
+div.alert[type = 'confirm.end.day'] > table tr{
+    height: 50px;;
+    cursor: pointer;
+}
+div.alert[type = 'confirm.end.day'] > table tr:nth-child(odd)  {
+    background-color: antiquewhite;
+}
+div.alert[type = 'confirm.end.day'] > table tr:nth-child(even) { 
+    background-color: aliceblue;
+} 
+div.alert[type = 'confirm.end.day'] > table tr:not(:nth-child(1)):hover { 
+    filter:brightness(0.8)
+}
+
+div.alert[type = 'confirm.end.day'] > table tr:nth-child(1) {
+    background-color: orange;
+    color :black;
+  
+}
+div.alert[type = 'confirm.end.day']  { 
+    flex-direction: column;
+    gap : 15px; 
+}
+div.alert[type = 'confirm.end.day'] > div.total { 
+    background: green;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    
+}
+div.alert[type = 'confirm.end.day'] > div.info
+
+{
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: azure;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100px;;
+}
+
+div.alert[type = 'confirm.end.day'] > div.info   > div  > span { 
+    font-weight: bold;
+    background: brown;
+    padding: 0px 15px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.alert[type = 'confirm.end.day'] > div.info   > div { 
+    font-weight: bold;
+    font-size: 20px;
+    color:#252525;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+}
+
+div.alert[type = 'confirm.end.day'] > div.info   > div.over { 
+    display:none;
+}
+div.alert[type = 'confirm.end.day'] > div.info   > div  > span::after{ 
+    content:"جنيه";
+    margin-right: 10px;
+}
+
+div.alert[type = 'confirm.end.day'] { 
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+div.alert[type = 'confirm.end.day']  > div.end { 
+    position: relative;
+    width : 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap : 30px;;
+}
+div.alert[type = 'confirm.end.day']  > div.end > button#finish, 
+div.alert[type = 'confirm.end.day']  > div.end > button#print { 
+    all : unset;
+    width: 100%;
+
+    padding:10px 20px;
+    background-color: #0080ff;
+    color : white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+div.alert[type = 'confirm.end.day']  > div.end > button#finish:hover , 
+div.alert[type = 'confirm.end.day']  > div.end > button#print:hover {
+    filter:brightness(0.9)
+}

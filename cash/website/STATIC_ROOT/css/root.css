@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "official_ar";
+    src: url("../fonts/Cairo/static/Cairo-Regular.ttf");
+}
+:root { 
+    --ess-color : rgb(220, 145, 5);
+}
+
+
+.border-2px {
+    border : 2px solid #25252529;
+}
+.box-shadow { 
+    box-shadow : 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    font-family: "official_ar";
+
+}
+body { 
+    background: linear-gradient(45deg, orange, #f8e81a);
+    padding : 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap : 70px;
+    font-family: "official_ar";
+    direction: rtl;
+
+}

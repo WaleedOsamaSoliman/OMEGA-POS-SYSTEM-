@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src = "{% static '/js/jquery.js' %}" type = ''></script>
+    <script src = "{% static '/js/main.js' %}"></script>
+    <link href = "{% static '/css/fontawesome/all.min.css' %}" rel = 'stylesheet'/> 
+    <link href = "{% static '/css/fontawesome/fontawesome.min.css' %}" rel = 'stylesheet'/> 
+    <link href = "{% static '/css/root.css' %}" rel = 'stylesheet'/> 
+    
+    {% block 'head' %}
+    {% endblock 'head' %}
+</head>
+
+<body>
+    {% block 'content' %}
+    {% endblock 'content' %}
+</body>
+</html>

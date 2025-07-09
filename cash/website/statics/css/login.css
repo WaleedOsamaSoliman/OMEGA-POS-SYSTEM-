@@ -1,0 +1,78 @@
+div.login-form { 
+    position: relative;
+    width : 550px;
+    min-height: 350px;
+    max-height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding :20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap : 25px;
+    justify-content: flex-start;
+    align-items: center;
+    color : rgb(103, 103, 103)
+    
+}
+div.login-form > span.title { 
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+div.login-form > div.inputs  { 
+    position: relative;
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 30px;
+    flex-direction: column;
+}
+
+div.login-form > div.inputs  > div.input { 
+    position: relative;
+    width: 100%;
+    /* height: 50px; */
+    /* background-color: red; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 25px;
+}
+div.login-form > div.inputs  > div.input > input { 
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    text-indent: 20px;
+    border-radius: 5px;
+}
+div.login-form > div.inputs  > div.input > input::placeholder { 
+    font-weight: 900;
+    color : var(--ess-color);
+    font-family: "official_ar";
+}
+div.login-form > div.inputs  > div.input >  i:before { 
+    font-size : 26px;
+}
+div.login-form > button#login  { 
+    position: relative;
+    width: 100%;
+    height: 50px;
+    min-height: 50px;;
+    background-color: var(--ess-color);
+    color : snow;  
+    outline : none;
+    border-radius: 5px; 
+    border : none;
+}
+div.login-form > button#login:hover { 
+    cursor: pointer;
+    filter:brightness(0.9)
+}
+
+div.login-form > span.cp { 
+    color : #252525;
+    font-size : 19px;
+    height: 10px;;
+}

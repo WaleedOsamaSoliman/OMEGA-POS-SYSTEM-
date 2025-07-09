@@ -1,0 +1,29 @@
+{% extends "basic.html" %}
+{% load static %}
+{% block 'head' %}
+<link href = "{% static 'css/login.css' %}" rel = 'stylesheet'/>
+<script src = "{% static 'js/login.js' %}"></script>
+
+{% endblock 'head' %}
+
+{% block 'content' %}
+    <div class = 'login-form border-2px .box-shadow'>
+        <span class = 'title'>تســجيل الدخــول</span>
+        <div class = 'inputs'>
+            <div class = 'input'>
+                <i class="fa-solid fa-user "></i>
+                <input class = 'border-2px' placeholder = 'اســـم المستــخدم' type = 'text' id = 'username'>
+
+            </div>
+
+             <div class = 'input'>
+                <i class="fa-solid fa-lock "></i>
+                <input class = 'border-2px' placeholder = 'كلمــة المــرور' type = 'password' id = 'password'>
+            </div>
+            
+        </div>
+
+        <button id = 'login'>دخـــول</button>
+        {% comment %} <Span class= 'cp'>جميــع الحقوق محفوظه ل صانع البرنامج </span> {% endcomment %}
+    </div>
+{% endblock 'content' %}

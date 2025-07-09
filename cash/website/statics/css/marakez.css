@@ -1,0 +1,261 @@
+div.overlay { 
+    position: fixed;
+    top : 0;
+    left : 0;
+    padding : 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 110, 110, 0.236);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 10px;
+    backdrop-filter: blur(5px);
+
+}
+div.overlay > div.details { 
+    position: relative;
+    width: 400px;
+    /* height: 500px; */
+    background-color: var(--ess-color-light);
+    border-radius: 5px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap : 20px;
+    padding : 10px;
+    
+}
+
+div.overlay > div.details  > span.title { 
+    font-weight: bold;
+    font-size: 2rem;
+    color :#fff;
+}
+div.overlay > div.details  > div.item { 
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex
+    ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap : 10px;
+}
+div.overlay > div.details  > div.item > span { 
+    font-size: 15px;
+    font-weight: 900;
+    color : #fff;
+    text-overflow: ellipsis;
+    width: 150px;;
+}
+div.overlay > div.details  > div.item > select , 
+div.overlay > div.details  > div.item > input { 
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    border-radius: 5px;
+    outline : none;
+    border : none;
+    text-indent: 15px;
+}
+
+
+div.overlay > div.details  > div.item > select > option {
+    text-indent: 15px;
+
+}
+div.overlay > div.details  > div.item > select > option:nth-child(1) , 
+div.overlay > div.details  > div.item > input::placeholder { 
+    font-size: 20px;
+    color :var(--ess-color-light);
+}
+div.overlay > div.details  > div.item > input { 
+    font-weight: 900;
+    font-size: 17px;
+    color : var(--ess-color-light);
+}
+
+div.overlay > div.details  > div.item > textarea { 
+    width: 100%;
+    height: 70px;
+    text-indent: 15px;
+    /* background-color: red; */
+}
+
+div.overlay > div.details  > div.item[type = 'money.total'] , 
+div.overlay > div.details  > div.item[type = 'money.remainning']{ 
+    pointer-events: none;
+}
+div.overlay > div.details  > div.item[type = 'money.total'] > input  , 
+div.overlay > div.details  > div.item[type = 'money.remainning'] > input { 
+    /* filter:brightness(0.5); */
+    color : green;
+
+}
+div.overlay > div.details >div.item > button.save , 
+div.overlay > div.details >div.item > button.cancel { 
+    outline : none;
+    border : none;
+    width: 100%;
+    min-height: 60px;
+    background-color: green;
+    color : #fff;
+    /* padding : 10px; */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+div.overlay > div.details>div.item  > button.cancel { 
+    background-color: red;
+}
+
+div.overlay[type ='query']  { 
+    padding : 70px;
+}
+div.overlay[type ='query']  > div.table { 
+    position: relative;
+    padding : 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap : 25px;
+    background-color: var(--ess-color-light);
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    min-width: 400px;
+    min-height: 400px;;
+    overflow: auto;
+}
+div.overlay[type ='query']  > div.table  > div.title { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap : 25px;
+    color : #252525;
+}
+div.overlay[type ='query']  > div.table  > div.title > span { 
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+div.overlay[type ='query']  > div.table > div.table-content>table { 
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    background-color:#fff;
+    border-radius: 5px;
+
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr { 
+    position: relative;
+    height: 50px;;
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr:nth-child(even) { 
+    background-color: bisque;
+
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr:nth-child(odd) { 
+    background-color: #d5d5d5;
+    
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr:nth-child(1) { 
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(3, 117, 24);
+    /* background-color: gree   n; */
+    border-radius: 5px;
+    color : #fff;
+    font-size: 14px;;
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.save:hover > i { 
+    color : green;
+    cursor: pointer;
+}
+
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.delete:hover > i { 
+    color : red;
+    cursor: pointer;
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.state.green > i { 
+    color : green
+} 
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.state.red > i { 
+    color : red;
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.pay-remain:hover > i{
+    color :Green;
+    cursor: pointer;
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.paid,
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.required { 
+    position: relative;
+    color :green;
+   
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.remainning  { 
+    color : red;    
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.paid::after,
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.remainning::after,
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.required::after   { 
+    position: relative;
+    content : "جنيه";
+    margin-right: 5px;
+    color : #252525;
+}
+
+div.overlay[type ='query']  > div.table > div.table-content>table tr:not(:nth-child(1)):hover { 
+    filter:brightness(0.9)
+}
+
+div.overlay[type ='query']  > div.table > div.table-content { 
+    width: 100%;
+    position: relative;
+    overflow:auto
+}
+
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.notes { 
+    font-size: 14px;
+    max-width: 350px;
+    color :brown;
+}
+div.overlay[type ='query']  > div.table > div.table-content>table tr >th.products { 
+    padding : 5px;
+    min-width: 200px;
+    max-width: 300px;;
+}
+div.overlay[type ='query']  > span.close { 
+    position: absolute;
+    top : 70px;
+    left : 50%;
+    background-color: var(--ess-color-light);
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+    transform : translate(-50% , -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+div.overlay[type ='query']  > span.close  > i { 
+    font-size: 19px;;
+    color : #fff
+}
+div.overlay[type ='query']  > span.close:hover { 
+    background-color:#fff;
+    cursor: pointer;
+}
+div.overlay[type ='query']  > span.close:hover > i { 
+    color :var(--ess-color-light)
+}

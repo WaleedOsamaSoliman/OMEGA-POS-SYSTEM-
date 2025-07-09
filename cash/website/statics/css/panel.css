@@ -1,0 +1,562 @@
+div.wrapper { 
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: #fff;
+}
+div.wrapper > div.navbar { 
+    position: relative;
+    width: 250px;
+    min-width: 250px;;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f7f7f7b3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction : column;
+    gap : 20px;
+    overflow: auto;
+    border-left : 1px solid var(--light-border-color);
+    padding : 15px;
+
+}
+div.wrapper > div.navbar > div.logo { 
+    width: 100%;
+    height: 70px;
+    min-height: 70px;
+    /* background-color: red; */
+    border-bottom : 1px solid var(--light-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap : 15px;
+    flex-wrap: nowrap;
+}
+div.wrapper > div.navbar > div.logo  > span.title { 
+    position: relative;
+    font-size: 3.3rem;
+    font-family: "logo_ar";
+    font-weight: 900;
+    color : rgb(255 125 1);
+
+}
+div.wrapper > div.navbar >  div.settings { 
+    position: relative;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap : 30px;
+    padding : 10px 0px;
+    padding-top : 30px;
+    overflow: auto;
+}
+div.wrapper > div.navbar >  div.settings > div.item { 
+    position: relative;
+    width: 100%;
+    /* min-height: 100px; */
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap : 4px;
+    padding : 5px 0px;
+    color : #252525;
+    
+
+}
+div.wrapper > div.navbar >  div.settings > div.item > div { 
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap : 15px;
+    padding :5px 10px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-size: 15px;;
+
+}
+div.wrapper > div.navbar >  div.settings > div.item > div  > i { 
+    font-size: 22px;
+    color : 25252584;
+}
+div.wrapper > div.navbar >  div.settings > div.item::before { 
+    position: absolute;
+    top : 0px;
+    right : 0px;
+    content : attr(title); 
+    transform :translate(0px , -30px);
+    font-weight: 900;
+    color :#25252584;
+    font-size: 15px;;
+
+}
+
+div.wrapper > div.navbar >  div.settings > div.item > div:hover { 
+    cursor: pointer;
+    color : snow;
+    background-color: var(--ess-color-light);
+}
+
+
+div.wrapper > div.control-panel { 
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: red; */
+    padding : 20px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap : 10px;
+}
+
+div.wrapper > div.control-panel > span.title { 
+
+    font-weight: 900;
+    font-size: 2rem;
+    color : var(--ess-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap : 30px
+}
+div.wrapper > div.control-panel > span.title > i { 
+    color :#00000099
+}
+
+div.wrapper > div.control-panel >  div.content { 
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding : 20px 0px
+}
+div.wrapper  > div.control-panel> span.cp { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    COLOR :#252525a8;
+    font-size: 14px;
+    /* height: 10px;; */
+}
+
+div.wrapper  > div.control-panel[type = 'add.user'] > div.content , 
+div.wrapper  > div.control-panel[type = 'remove.user'] > div.content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.wrapper  > div.control-panel[type = 'add.user'] > div.content >div.form ,
+div.wrapper  > div.control-panel[type = 'remove.user'] > div.content >div.form { 
+    position: relative;
+    width: 500px;
+    min-height: 200px;
+    border-radius: 5px;
+    background-color: var(--ess-color-light);
+    padding: 20px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap : 10px;
+}
+
+div.wrapper  > div.control-panel[type = 'add.user'] > div.content >div.form > div.input { 
+    width: 100%;
+    min-height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+}
+div.wrapper  > div.control-panel[type = 'add.user'] > div.content >div.form > div.input > i { 
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :#fff;
+    min-width: 40px;
+}
+div.wrapper  > div.control-panel[type = 'add.user'] > div.content >div.form > div.input > input { 
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border:none;
+    text-indent: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border :1px solid rgba(160, 158, 158, 0.382);
+    font-weight: 900;
+    font-size: 16px;
+    
+}
+div.wrapper  > div.control-panel[type = 'add.user'] > div.content >div.form > div.input > input::placeholder { 
+    font-size: 17px;
+    font-weight: bold;
+    color :var(--ess-color-light)
+}
+
+div.wrapper  > div.control-panel  button:hover { 
+    cursor: pointer;
+    filter:brightness(0.9)
+}
+div.wrapper  > div.control-panel[type = 'add.user'] > div.content >div.form > button#add , 
+div.wrapper  > div.control-panel[type = 'remove.user'] > div.content >div.form > button#remove { 
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding :5px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    color :var(--ess-color-light);
+    outline: none;
+    border: none;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+div.wrapper  > div.control-panel[type = 'remove.user'] > div.content >div.form > div.users-list { 
+    position: relative;
+    width: 200px;
+    min-height: 200px;
+    background-color: red;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 10px;
+}
+
+div.wrapper  > div.control-panel[type = 'report.products'] > div.content   { 
+    height: 100%;
+    overflow: auto;
+}
+div.wrapper  > div.control-panel[type = 'report.products'] > div.content   > div.btns { 
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row; 
+    font-size: 14px;
+    color :#fff;
+    margin-bottom : 10px;
+    gap : 15px;
+}
+
+div.wrapper  > div.control-panel[type = 'report.products'] > div.content >div.btns > div { 
+    position: relative;
+    background-color: var(--silver-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap : 15px;
+    padding: 4px 9px;
+
+    border-radius: 5px;
+    /* color : #fff;
+    font-size: 14px;; */
+
+
+}
+div.wrapper  > div.control-panel[type = 'report.products'] > div.content > div.btns  > div:hover { 
+    cursor: pointer;
+    filter:brightness(0.9);
+    background-color: green;
+}
+
+div.wrapper  > div.control-panel[type = 'report.products'] > div.content  > table.header { 
+    position: relative;
+    width: 100%;
+    
+    background-color: var(--ess-color-light);
+
+}
+
+
+div.wrapper  > div.control-panel[type = 'report.products'] > div.content  > table.header tr:nth-child(even) { 
+    background-color: var(--light-border-color);
+}   
+div.wrapper  > div.control-panel[type = 'report.products'] > div.content  > table.header tr:nth-child(odd) { 
+    background-color: #fff;
+    color : #252525
+}   
+
+div.wrapper  > div.control-panel[type = 'report.products'] > div.content  > table.header tr:nth-child(1) { 
+    background-color: var(--ess-color-light);
+    color : #fff
+}   
+div.wrapper  > div.control-panel[type = 'report.products'] { 
+    height: 100%;
+}
+/* div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th:nth-last-child(2),
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th:nth-last-child(3),
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th:nth-last-child(1),
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th:nth-child(1),
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th:nth-child(2),
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th:nth-child(4),
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th:nth-child(5)  { 
+  width: 70px;
+}    */
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th { 
+    width: 50px;
+}
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  i { 
+    font-size: 30px;
+}
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr {
+    min-height: 50px;
+    cursor: pointer;
+}
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr:not(:nth-child(1)):hover { 
+    filter:brightness(0.8);
+    cursor: pointer;
+   
+}
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr  th input { 
+    width: 50px;;
+    text-align: center;
+    font-weight: bold;
+    color :var(--ess-color-light)
+}
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr:not(:nth-child(1)):hover > th:nth-child(1)::before { 
+    /* background-color: blue; */
+    position: absolute;
+    content :"";
+    width: 5px ;
+    height: 100%;
+    background-color: green;
+    top : 0;
+    right : 0px;
+    border-radius: 5px;
+}
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr:not(:nth-child(1)) > th:nth-last-child(1):hover,
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr:not(:nth-child(1)) > th:nth-last-child(2):hover  {
+    filter:brightness(1)
+}
+
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr:not(:nth-child(1)) { 
+    height: 50px;;
+}
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr:nth-child(1) th:hover{ 
+    color : green;
+}   
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr:not(:nth-child(1)) th:nth-last-child(1):hover { 
+    background-color: darkred;
+    color : #fff;
+}
+div.wrapper > div.control-panel[type = 'report.products'] > div.content > table.header  tr:not(:nth-child(1)) th:nth-last-child(2):hover { 
+    background-color: green;
+    color : #fff;
+}
+
+div.wrapper > div.control-panel[type = 'over.user'] >  div.content  {
+
+    gap : 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start ;
+    
+}
+div.wrapper > div.control-panel[type = 'over.user'] >  div.content > button.details { 
+    width: 100px;
+    padding:10px;
+    height: 40px;
+    background-color: var(--ess-color-light);
+    bordeR:none;
+    color : snow;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+div.wrapper > div.control-panel[type = 'over.user'] >  div.content > table  { 
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ess-color-light);
+}
+
+div.wrapper > div.control-panel[type = 'over.user'] >  div.content > table  tr { 
+    height: 50px;;
+}
+
+
+div.wrapper  > div.control-panel[type = 'over.user'] > div.content  > table tr:nth-child(even) { 
+    background-color: var(--light-border-color);
+}   
+div.wrapper  > div.control-panel[type = 'over.user'] > div.content  > table tr:nth-child(odd) { 
+    background-color: #fff;
+    color : #252525
+}   
+
+div.wrapper > div.control-panel[type = 'over.user'] >  div.content > table  tr:nth-child(1) { 
+    background-color: var(--ess-color-light);
+
+    color : snow;
+}
+div.wrapper  > div.control-panel[type = 'over.user'] > div.content  > table tr:not(:nth-child(1)) > th[name = 'over-amount'] { 
+   
+    position: relative;
+ 
+    color : green;
+}
+div.wrapper  > div.control-panel[type = 'over.user'] > div.content  > table tr:not(:nth-child(1)) > th[name = 'over-amount']::afteR { 
+    position: relative;
+    content:"جنيـه";
+    color :#252525;
+    height: 100%;
+    padding-right :10px;
+    
+}
+
+div.wrapper > div.control-panel[type = 'over.user'] >  div.content > table  tr.total { 
+    background-color: var(--ess-color-light);
+    color :#fff
+}
+div.wrapper > div.control-panel[type = 'over.user'] >  div.content > div.got { 
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+div.wrapper > div.control-panel[type = 'over.user'] >  div.content > div.got > button  { 
+    width: 200px;
+    min-width : 170px;
+    padding : 10px;
+    height: 60px;
+    background-color: green;
+    color : #fff;
+    border-radius: 5px;
+    outline: none;
+    border : none;
+    font-weight: bold;
+}
+
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content { 
+    position: relative;
+    min-height: 300px;
+    /* background-color: red; */
+    min-width: 100%;
+    padding : 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap : 20px;
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > div.type  {
+    position: relative;
+    min-width: 200px;
+    min-height: 40px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap : 20px;
+    /* padding : 5px 10px; */
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > div.type  > span { 
+    background-color: var(--silver-color);
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px 10px;
+    color : snow;
+    min-width: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > div.type  > span:hover { 
+    background-color: var(--ess-color-light);
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table { 
+    width: 100%;
+    background-color: var(--ess-color-light);
+}
+
+
+
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr { 
+    height: 50px;;
+
+}
+
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:nth-child(odd) {
+    background-color: #fff; 
+
+}
+
+
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:nth-child(even) {
+    background-color: var(--light-border-color); 
+
+}
+
+
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:nth-child(1) { 
+    background-color: var(--ess-color-light);
+    height: 40px;;
+}
+
+
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:not(:nth-child(1)) > th[type='amount'] { 
+    color :var(--ess-color-light)
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:not(:nth-child(1)) > th[type='save'] { 
+    width: 100px;;
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:not(:nth-child(1)) > th[type='save']:hover { 
+    
+    background-color: green;
+    cursor: pointer;
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:not(:nth-child(1)) > th[type='save']:hover  > i { 
+    color : #fff;
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:not(:nth-child(1)) > th[type='edit'] > input { 
+    position: relative;
+    text-indent: 10px;
+    font-weight: 900;
+    color :var(--ess-color-light)
+}
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:not(:nth-child(1)) > th[type='edit']::after , 
+div.wrapper > div.control-panel[type = 'minus.user'] > div.content > table  tr:not(:nth-child(1)) > th[type='amount']::after  { 
+    position: relative;
+    content:"جنيه";
+    color :#252525;
+    padding : 10px;
+}
+div.wrapper > div.control-panel[type ='minus.user'] > div.content > div.type > span.active { 
+    background-color: var(--ess-color-light);
+    color : #fff;
+}
