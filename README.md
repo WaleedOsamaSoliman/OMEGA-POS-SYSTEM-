@@ -36,16 +36,18 @@ It ensures **security, speed, and simplicity** for day-to-day internal transacti
 
 ## 🖼️ System Screenshots
 
-> *(Below are sample screenshots. You can replace `assets/` with your actual folder name in the repo)*
+> *(Below are sample screenshots.)*
 
 ### 🔐 Login Page
-![Login Page](screenshots/1.png)
+![Login Page](screenshot/1.png)
 
-### 📋 Dashboard
-![Dashboard](screenshots/2.png)
+### 📋 day Sales Report 
+![Day Sales Report](screenshots/10.png)
+![Day Sales Report](screenshot/1.png)
 
-### 🧾 Sample Receipt
-![Receipt](screenshots/3.png)
+
+### 🧾 Random Screenshotss
+![Receipt](screenshots/17.png)
 
 ---
 
