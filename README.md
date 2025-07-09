@@ -42,14 +42,35 @@ It ensures **security, speed, and simplicity** for day-to-day internal transacti
 ![Login Page](screenshot/1.png)
 
 ### 📋 day Sales Report 
-![Day Sales Report](screenshots/10.png)
-![Day Sales Report](screenshot/1.png)
+![Day Sales Report](screenshot/10.png)
+![Day Sales Report](screenshot/11.png)
 
 
 ### 🧾 Random Screenshotss
-![Receipt](screenshots/17.png)
+![feature](screenshots/1.png)
+![feature](screenshots/12.png)
+![feature](screenshots/13.png)
+![feature](screenshots/14.png)
+![feature](screenshots/15.png)
+![feature](screenshots/16.png)
+![feature](screenshots/17.png)
+![feature](screenshots/18.png)
+![feature](screenshots/19.png)
+![feature](screenshots/20.png)
+![feature](screenshots/2.png)
+![feature](screenshots/21.png)
+![feature](screenshots/22.png)
+![feature](screenshots/23.png)
+![feature](screenshots/24.png)
+![feature](screenshots/25.png)
+![feature](screenshots/3.png)
+![feature](screenshots/4.png)
+![feature](screenshots/5.png)
+![feature](screenshots/6.png)
+![feature](screenshots/7.png)
+![feature](screenshots/8.png)
+![feature](screenshots/9.png)
+
 
 ---
-
-## 🗂️ Project Structure
 
